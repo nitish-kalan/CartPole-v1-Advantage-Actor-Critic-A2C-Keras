@@ -3,13 +3,17 @@
 CartPole-v1 is an environment presented by OpenAI Gym. In this repository we have used Advantage Actor Critic (A2C) algorithm  for building an agent to solve this environment.
 
 ### Commands to run
-#### To train the model
-python train_model.py
+ * **To train the model**
+  
+        python train_model.py
+        
+ *  **To test the model**
 
-#### To test the model
-<code>python test_model.py 'path_of_saved_model_weights'</code> (without quotes)
+        python test_model.py 'path_of_saved_model_weights' (without quotes)
 
-To test agent with our trained weights: <code>python test_model.py saved_model/500.0.h5</code>
+ * **To test agent with our trained weights**
+        
+        python test_model.py saved_model/500.0.h5
 
 
 ### Results
