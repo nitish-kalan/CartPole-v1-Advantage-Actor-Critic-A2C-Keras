@@ -1,4 +1,4 @@
-# CartPole-v1 Advantage Actor Critic (A2C)
+# CartPole-v1 Advantage Actor Critic (A2C) in Keras
 
 CartPole-v1 is an environment presented by OpenAI Gym. In this repository we have implemeted Advantage Actor Critic (A2C) algorithm in Keras for building an agent to solve CartPole-v1 environment.
 
