@@ -94,12 +94,12 @@ for episode in range(EPISODES):
 
         # Recording experience to train the actor and critic
         replay_memory.append((cur_state, np.argmax(action), reward, next_state, done))
-
+        cur_state = next_state
+        
         if len(replay_memory) < MINIMUM_REPLAY_MEMORY:
             continue
-        # Trinig actor and critic
+        # Training actor and critic
         train_advantage_actor_critic(replay_memory, actor, critic)
-        cur_state = next_state
 
         # Decreasing the exploration probability
         if EPSILON > MINIMUM_EPSILON and len(replay_memory) >= MINIMUM_REPLAY_MEMORY:
